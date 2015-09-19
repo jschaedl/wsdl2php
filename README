@@ -1,42 +1,53 @@
 
-	wsdl2php - PHP 5 Web Service Proxy Generator
-	--------------------------------------------
+# wsdl2php - PHP 5 Web Service Proxy Generator
+
 
 wsdl2php is a tool for generating PHP 5 proxy classes that can be used to access 
 web services. It make use of both the SOAP and DOM extension.
 
-Requirements
-------------
+## Requirements
+
 In order to use wsdl2php you must fullfill the following requirements:
 
-    o PHP 5 >= 5.0.1 with SOAP and DOM enabled
-    o PEAR installer >= 1.4
-    o Phing
-        $ pear channel-discover pear.phing.info
-        $ pear install phing/phing
-    o XML_Serializer >= 0.20.2
-        $ pear install pear/XML_Serializer-beta
-    o PEAR_PackageFileManager >= 1.7.0
-        $ pear install PEAR_PackageFileManager
+* PHP 5 >= 5.0.1 with SOAP and DOM enabled
+* PEAR installer >= 1.4
+* Phing
+```
+$ pear channel-discover pear.phing.info
+$ pear install phing/phing
+```
 
-Installation
-------------
-1) Clone the latest release from git://github.com/jbarciauskas/wsdl2php.git
-2) Build the package
+* XML_Serializer >= 0.20.2
+```
+$ pear install pear/XML_Serializer-beta
+```
 
-    $ phing
+*PEAR_PackageFileManager >= 1.7.0
+````
+$ pear install PEAR_PackageFileManager
+```
 
-3) Install the package with the PEAR installer:
+## Installation
 
-    $ sudo pear install build/wsdl2php-x.y.z-pear.tgz
+1. Clone the latest release from git://github.com/jbarciauskas/wsdl2php.git
+2. Build the package
+```
+$ phing
+```
 
-Usage
------
+3. Install the package with the PEAR installer:
+```
+$ sudo pear install build/wsdl2php-x.y.z-pear.tgz
+```
 
-    $ wsdl2php http://someservice.com/api/Soap.wsdl Soap_Data_Namespace_
+## Usage
 
-Credits
--------
+```
+$ wsdl2php http://someservice.com/api/Soap.wsdl Soap_Data_Namespace_
+```
+
+## Credits
+
 Knut Urdalen - author
 John Lindal - contributor
 
